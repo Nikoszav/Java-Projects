@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spain</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+</head>
+<body>
+<div class="navbara">
+    <a class="ex1" href="/index" th:href="@{index}">Home </a>
+    <a class="ex1" href="/about" th:href="@{/about}">About</a>
+    <a class="ex1" href="/contact_us" th:href="@{/contact_us}">Contact Us</a>
+    <div class="dropdown1">
+        <button class="dropbtn1">Vote
+            <i class="fa fa-caret-down"1></i>
+        </button>
+        <div class="dropdown1-content">
+            <a href="greece" th:href="@{/greece}">Greece</a>
+            <a href="uk" th:href="@{/uk}">UK</a>
+            <a href="spain" th:href="@{/spain}">Spain</a>
+        </div>
+    </div>
+    <div id="register" >
+        <a href="/register" th:href="@{/register}">Register</a>
+    </div>
+</div>
+<section class="container-fluid px-0"  >
+    <div class="row align-items-center">
+        <div class="col-6 "align="center">
+
+            <p>
+                The Temple Expiatori de la Sagrada Família ([səˈɣɾaðə fəˈmili.ə]; Spanish: Templo Expiatorio de la Sagrada Familia; "Expiatory Church of the Holy Family") is a large unfinished Roman Catholic church in Barcelona, designed by Catalan architect Antoni Gaudí (1852–1926). Gaudí's work on the building is part of a UNESCO World Heritage Site. In November 2010 Pope Benedict XVI consecrated and proclaimed it a minor basilica, as distinct from a cathedral, which must be the seat of a bishop.
+            </p>
+            <div class="container">
+                <button type="button" onclick="changeColor1(this)" id="1" value="Like!">Like!</button>
+                <button type="button" onclick="changeColor2(this)" id="2" value="Dislike!">Dislike!</button>
+            </div>
+        </div>
+        <div class="col-6" align="right">
+            <img class="img-fluid" src="../static/images/Spain1.jpeg" th:src="@{/images/Spain1.jpeg}" alt="1" width="500" height="750">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <img class="img-fluid" src="../static/images/Spain5.jpeg" th:src="@{/images/Spain5.jpeg}" alt="2" width="590" height="350">
+        </div>
+        <div class="col-6 container" align="center">
+            <p>
+                The Metropolis Building or Edificio Metrópolis (Spanish) is an office building in Madrid, Spain, at the corner of the Calle de Alcalá and Gran Vía. Inaugurated in 1911, it was designed by Jules and Raymond Février for the insurance company La Unión y el Fénix. It is currently owned by Metrópolis Seguros.
+            </p>
+            <div class="container">
+                <button type="button" onclick="changeColor3(this)" id="3" value="Like!">Like!</button>
+                <button type="button" onclick="changeColor4(this)" id="4" value="Dislike!">Dislike!</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6" align="center" >
+            <p>
+                The Royal Palace of Madrid (Spanish: Palacio Real de Madrid) is the official residence of the Spanish Royal Family at the city of Madrid, but it is only used for state ceremonies. The palace has 135,000 square metres (1,450,000 sq ft) of floor space and contains 3,418 rooms. It is the largest functioning Royal Palace and the largest by floor area in Europe.
+            </p>
+            <button type="button" onclick="changeColor5(this)" id="5" value="Like!">Like!</button>
+            <button type="button" onclick="changeColor6(this)" id="6" value="Dislike!">Dislike!</button>
+        </div>
+        <div class="col-6" align="right">
+            <img class="img-fluid" src="../static/images/Spain13.jpeg" th:src="@{/images/Spain13.jpeg}" alt="2" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <img class="img-fluid" src="../static/images/Spain7.jpeg" th:src="@{/images/Spain7.jpeg}" alt="2" >
+        </div>
+        <div class="col-6" align="center">
+            <p>
+                The Mosque–Cathedral of Córdoba (Spanish: Mezquita-Catedral de Córdoba), also known as the Great Mosque of Córdoba(Spanish: Mezquita de Córdoba) and the Mezquita, whose ecclesiastical name is the Cathedral of Our Lady of the Assumption (Spanish: Catedral de Nuestra Señora de la Asunción), is the Catholic cathedral of the Diocese of Córdoba dedicated to the Assumption of the Virgin Mary and located in the Spanish region of Andalusia. The structure is regarded as one of the most accomplished monuments of Moorish architecture.
+                According to a traditional account, a small Visigoth church, the Catholic Basilica of Saint Vincent of Lérins, originally stood on the site.In 784 Abd al-Rahman I ordered construction of the Great Mosque, which was considerably expanded by later Muslim rulers. Córdoba returned to Christian rule in 1236 during the Reconquista, and the building was converted to a Roman Catholic church, culminating in the insertion of a Renaissance cathedral nave in the 16th century.
+            </p>
+            <button type="button" onclick="changeColor7(this)" id="7" value="Like!">Like!</button>
+            <button type="button" onclick="changeColor8(this)" id="8" value="Dislike!">Dislike!</button>
+        </div>
+    </div>
+</section>
+</body>
+<footer>
+    &copy; N.Zavitsanos 2019
+</footer>
+<script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+</html>

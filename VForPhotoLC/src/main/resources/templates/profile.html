@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+</head>
+<div class="navbara">
+    <a class="ex1" href="/index" th:href="@{index}">Home </a>
+    <a class="ex1" href="/about" th:href="@{/about}">About</a>
+    <a class="ex1" href="/contact_us" th:href="@{/contact_us}">Contact Us</a>
+    <div class="dropdown1">
+        <button class="dropbtn1">Vote
+            <i class="fa fa-caret-down"1></i>
+        </button>
+        <div class="dropdown1-content">
+            <a href="greece" th:href="@{/greece}">Greece</a>
+            <a href="uk" th:href="@{/uk}">UK</a>
+            <a href="spain" th:href="@{/spain}">Spain</a>
+        </div>
+    </div>
+    <div id="register" >
+        <a href="/register" th:href="@{/register}">Register</a>
+    </div>
+</div>
+
+<table class="table table-striped table-dark">
+    <thead>
+    <tr>
+
+        <th scope="col">First Name </th>
+        <th scope="col"> Name </th>
+        <th scope="col">Email</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+
+        <td th:text="${collatedUser.getPhotoUser().firstName}">Nikos</td>
+        <td th:text="${collatedUser.getPhotoUser().lastName}">Zav</td>
+        <td th:text="${collatedUser.getPhotoUser().email}">nikos@zav.com</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+    <tr>
+        <th>Login History</th>
+    </tr>
+    </tr>
+        <tr th:each="login : ${collatedUser.logins}">
+        <td th:text="${login.time}">6th April 2019</td>
+    </tr>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

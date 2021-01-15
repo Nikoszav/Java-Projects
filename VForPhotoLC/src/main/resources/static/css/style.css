@@ -1,0 +1,141 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbara {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbara a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.dropdown1 {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown1 .dropbtn1 {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbara a:hover, .dropdown1:hover .dropbtn1 {
+    background-color: blue;
+}
+
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #fbfbfb;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown1-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown1-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown1-content {
+    display: block;
+}
+
+#register{
+
+    position: absolute;
+    right: 0px;
+    width: 100px;
+
+}
+a.ex1:hover, a.ex1:active{color: white}
+a#register:hover, a#register:active{color: white}
+footer {
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 5;
+}
+@media screen and (max-device-width: 30rem) {
+
+    /*
+    For mobile devices move the nav section to be a row rather than a side bar
+     */
+    navbara {
+        grid-column: 1 / -1;
+
+    }
+
+    /*
+    Change the list of links to display horizontally (using flex)
+     */
+    navbara ul {
+        display: flex;
+    }
+
+    navbara a {
+        font-size: 2.2rem;
+        padding: 1rem;
+    }
+    /*
+    Set all sections to span all 12 columns
+     */
+    section {
+        grid-column: 1 / -1;
+    }
+    .images {
+        grid-row: 4;
+    }
+
+    .video {
+        grid-row: 5;
+    }
+
+    footer {
+        grid-row: 6;
+    }
+
+
+}
+
+
+.dropdownlink a {
+    display:block;
+    background-color: #FF0E2E;
+    color:#ffffff;
+    padding:0.2rem;
+    margin-right:0.1rem;
+    margin-bottom:0.1rem;
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.show {display:block;}

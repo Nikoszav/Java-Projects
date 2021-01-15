@@ -1,0 +1,18 @@
+html files : templates/index
+            templates/register
+            templates/contact_us
+            templates/greece
+            templates/spain
+            templates/uk
+            templates/about
+            templates/profile
+
+CSS files : static/css/style.css
+             static/css/bootstrap.css
+JS file:    static/js/main.js
+
+validation behaviour: static/templates/register
+
+database writes: templates/register
+database reads: templates/profile
+

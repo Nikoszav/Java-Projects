@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Uk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+</head>
+<body>
+<div class="navbara">
+    <a class="ex1" href="/index" th:href="@{index}">Home </a>
+    <a class="ex1" href="/about" th:href="@{/about}">About</a>
+    <a class="ex1" href="/contact_us" th:href="@{/contact_us}">Contact Us</a>
+    <div class="dropdown1">
+        <button class="dropbtn1">Vote
+            <i class="fa fa-caret-down"1></i>
+        </button>
+        <div class="dropdown1-content">
+            <a href="greece" th:href="@{/greece}">Greece</a>
+            <a href="uk" th:href="@{/uk}">UK</a>
+            <a href="spain" th:href="@{/spain}">Spain</a>
+        </div>
+    </div>
+    <div id="register" >
+        <a href="/register" th:href="@{/register}">Register</a>
+    </div>
+</div>
+<section class="container-fluid px-0"  >
+    <div class="row align-items-center">
+        <div class="col-6 "align="center">
+
+            <p >
+                Westminster is an area in central London within the City of Westminster, part of the West End, on the north bank of the River Thames.[1] Westminster's concentration of visitor attractions and historic landmarks, one of the highest in London, includes the Palace of Westminster, Buckingham Palace, Westminster Abbey and Westminster Cathedral.
+                Historically the area lay within St Margaret's parish, City & Liberty of Westminster, Middlesex.
+                The name Westminster (Old English: Westmynstre)[2] originated from the informal description of the abbey church and royal peculiar of St Peter's (Westminster Abbey), literally West of the City of London (indeed, until the Reformation there was a reference to the 'East Minster' at Minories (Holy Trinity Priory, Aldgate) east of the City). The abbey was part of the royal palace that had been created here by Edward the Confessor. It has been the home of the permanent institutions of England's government continuously since about 1200 (High Middle Ages' Plantagenet times), and from 1707 the British Government — formally titled Her Majesty's Government.
+            </p>
+            <div class="container">
+                <button type="button" onclick="changeColor1(this)" id="1" value="Like!">Like!</button>
+                <button type="button" onclick="changeColor2(this)" id="2" value="Dislike!">Dislike!</button>
+            </div>
+        </div>
+        <div class="col-6" align="right">
+            <img class="img-fluid" src="../static/images/UK1.jpeg" th:src="@{/images/UK1.jpeg}" alt="1" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <img class="img-fluid" src="../static/images/UK2.jpeg" th:src="@{/images/UK2.jpeg}" alt="2" >
+        </div>
+        <div class="col-6 container" align="center">
+            <p>
+                30 St Mary Axe (known previously as the Swiss Re Building), informally known as The Gherkin, is a commercial skyscraper in London's primary financial district, the City of London. It was completed in December 2003 and opened in April 2004. With 41 floors, it is 180 metres (591 ft) tall and stands on the former sites of the Baltic Exchange and Chamber of Shipping, which were extensively damaged in 1992 by a bomb placed by the Provisional IRA in St Mary Axe, a narrow street leading north from Leadenhall Street.
+            </p>
+            <div class="container">
+                <button type="button" onclick="changeColor3(this)" id="3" value="Like!">Like!</button>
+                <button type="button" onclick="changeColor4(this)" id="4" value="Dislike!">Dislike!</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6" align="center">
+            <p>
+                South Kensington is an affluent district of West London in the Royal Borough of Kensington and Chelsea. With some of its easterly areas shared with the City of Westminster, the district is known as a popular tourist destination due to its density of museums and culutral landmarks.
+            </p>
+            <button type="button" onclick="changeColor5(this)" id="5" value="Like!">Like!</button>
+            <button type="button" onclick="changeColor6(this)" id="6" value="Dislike!">Dislike!</button>
+        </div>
+        <div class="col-6" align="right">
+            <img class="img-fluid" src="../static/images/UK3.jpeg" th:src="@{/images/UK3.jpeg}" alt="2" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <img class="img-fluid" src="../static/images/UK4.jpeg" th:src="@{/images/Uk4.jpeg}" alt="2" >
+        </div>
+        <div class="col-6" align="center">
+            <p>
+                Tower Bridge is a combined bascule and suspension bridge in London, built between 1886 and 1894. The bridge crosses the River Thames close to the Tower of London and has become an iconic symbol of London. Because of this, Tower Bridge is sometimes confused with London Bridge, situated some 0.5 mi (0.80 km) upstream. Tower Bridge is one of five London bridges now owned and maintained by the Bridge House Estates, a charitable trust overseen by the City of London Corporation. It is the only one of the Trust's bridges not to connect the City of London directly to the Southwark bank, as its northern landfall is in Tower Hamlets.
+            </p>
+            <button type="button" onclick="changeColor7(this)" id="7" value="Like!">Like!</button>
+            <button type="button" onclick="changeColor8(this)" id="8" value="Dislike!">Dislike!</button>
+        </div>
+    </div>
+</section>
+</body>
+<footer>
+    &copy; N.Zavitsanos 2019
+</footer>
+<script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+</html>

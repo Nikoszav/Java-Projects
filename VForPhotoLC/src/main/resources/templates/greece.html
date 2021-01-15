@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+        <title>Greece</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+
+</head>
+<style>
+
+</style>
+<body>
+
+<div class="navbara ">
+    <a class="ex1" href="/index" th:href="@{index}">Home </a>
+    <a class="ex1" href="/about" th:href="@{/about}">About</a>
+    <a class="ex1" href="/contact_us" th:href="@{/contact_us}">Contact Us</a>
+    <div class="dropdown1">
+        <button class="dropbtn1">Vote
+            <i class="fa fa-caret-down"1></i>
+        </button>
+        <div class="dropdown1-content">
+            <a href="greece" th:href="@{/greece}">Greece</a>
+            <a href="uk" th:href="@{/uk}">UK</a>
+            <a href="spain" th:href="@{/spain}">Spain</a>
+        </div>
+    </div>
+    <div id="register" >
+        <a href="/register" th:href="@{/register}">Register</a>
+    </div>
+</div>
+<form th:action="@{/greece}" method="get" name="form1">
+
+</form>
+<section class="container-fluid px-0"  >
+    <div class="row align-items-center">
+        <div class="col-6 "align="center">
+
+            <p>
+                The Shipwreck Bay (Navagio in Greek) is the most famous beach of Zante island. It took its name when a ship carrying illegal cigarettes wrecked there in 1983. The rusted ship can be seen today ashore. Visited only by boat, Navagio has wonderful crystal water and soft white sand. Before reaching Navagio, the tour boat makes a stop in the famous Blue Caves, with equally amazing water.
+            </p>
+            <div class="container">
+                <button type="button" onclick="changeColor1(this)" id="1" value="Like!">Like!</button>
+                <button type="button" onclick="changeColor2(this)" id="2" value="Dislike!">Dislike!</button>
+            </div>
+        </div>
+        <div class="col-6" align="right">
+            <img class="img-fluid" src="../static/images/Greece1.jpeg" th:src="@{/images/Greece1.jpeg}"  alt="1" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+                <img class="img-fluid" src="../static/images/Greece2.jpeg" th:src="@{/images/Greece2.jpeg}" alt="2" >
+        </div>
+        <div class="col-6 container" align="center">
+            <p>
+                The Acropolis of Athens and its monuments are universal symbols of the classical spirit and civilization and form the greatest architectural and artistic complex bequeathed by Greek Antiquity to the world. In the second half of the fifth century bc, Athens, following the victory against the Persians and the establishment of democracy, took a leading position amongst the other city-states of the ancient world. In the age that followed, as thought and art flourished, an exceptional group of artists put into effect the ambitious plans of Athenian statesman Pericles and, under the inspired guidance of the sculptor Pheidias, transformed the rocky hill into a unique monument of thought and the arts. The most important monuments were built during that time: the Parthenon, built by Ictinus, the Erechtheon, the Propylaea, the monumental entrance to the Acropolis, designed by Mnesicles and the small temple Athena Nike.
+            </p>
+            <div class="container">
+                <button type="button" onclick="changeColor3(this)" id="3" value="Like!">Like!</button>
+                <button type="button" onclick="changeColor4(this)" id="4" value="Dislike!">Dislike!</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6" align="center">
+            <p >
+                Porto Katsiki is the most famous beach on Lefkada island, located on the southwestern side of the island. The name of this beach literally means "the port of the goats". Above the impressive bay, there is a car park and a couple of beach bars to enjoy the breathtaking view of the Ionian Sea. Visitors have to go down a few steps to reach this white pebbled coast with the exotic deep waters. Source: www.greeka.com
+            </p>
+            <button type="button" onclick="changeColor5(this)" id="5" value="Like!">Like!</button>
+            <button type="button" onclick="changeColor6(this)" id="6" value="Dislike!">Dislike!</button>
+        </div>
+        <div class="col-6" align="right">
+            <img class="img-fluid" src="../static/images/Greece5.jpeg" th:src="@{/images/Greece5.jpeg}" alt="2" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <img class="img-fluid" src="../static/images/Greece4.jpeg" th:src="@{/images/Greece4.jpeg}" alt="2" >
+        </div>
+        <div class="col-6" align="center">
+            <p>
+                The Rio–Antirrio Bridge (Greek: Γέφυρα Ρίου-Αντιρρίου), officially the Charilaos Trikoupis Bridge, is one of the world's longest multi-span cable-stayed bridges and longest of the fully suspended type. It crosses the Gulf of Corinth near Patras, linking the town of Rio on the Peloponnese peninsula to Antirrio on mainland Greece by road. It opened in August 2004.
+            </p>
+            <button type="button" onclick="changeColor7(this)" id="7" value="Like!">Like!</button>
+            <button type="button" onclick="changeColor8(this)" id="8" value="Dislike!">Dislike!</button>
+        </div>
+    </div>
+</section>
+
+</body>
+<footer>
+    &copy; N.Zavitsanos 2019
+</footer>
+
+<script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+
+</html>

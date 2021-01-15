@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+</head>
+<body>
+
+    <div class="navbara " >
+               <a class="ex1" href="/index" th:href="@{index}">Home </a>
+               <a class="ex1" href="/about" th:href="@{/about}">About</a>
+               <a class="ex1" href="/contact_us" th:href="@{/contact_us}">Contact Us</a>
+                <div class="dropdown1">
+                <button class="dropbtn1">Vote
+                    <i class="fa fa-caret-down"1></i>
+                </button>
+                <div class="dropdown1-content">
+                    <a href="greece" th:href="@{/greece}">Greece</a>
+                    <a href="uk" th:href="@{/uk}">UK</a>
+                    <a href="spain" th:href="@{/spain}">Spain</a>
+                </div>
+            </div>
+            <div id="register" >
+                <a href="/register" th:href="@{/register}">Register</a>
+            </div>
+    </div>
+    <section id="header" class="jumbotron text-center" >
+        <h1 class="display-3">VForPhoto</h1>
+        <p>The revolution in photography</p>
+    </section>
+    <i class="far fa-thumbs-up"></i>
+</body>
+<footer>
+    &copy; N.Zavitsanos 2019
+</footer>
+
+
+</html>
